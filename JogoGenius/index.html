@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Neon Genius</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <header>
+
+    <h1>NEON <span>GENIUS</span></h1>
+
+    <button id="startBtn">
+      START GAME
+    </button>
+
+  </header>
+
+  <main>
+
+    <div class="board">
+
+      <div class="pad green" data-color="green"></div>
+
+      <div class="pad red" data-color="red"></div>
+
+      <div class="pad yellow" data-color="yellow"></div>
+
+      <div class="pad blue" data-color="blue"></div>
+
+      <div class="center">
+
+        <h2>GENIUS</h2>
+
+        <p>MEMORY</p>
+
+      </div>
+
+    </div>
+
+    <div class="panel">
+
+      <div class="card">
+
+        <h3>ROUND</h3>
+
+        <span id="round">
+          0
+        </span>
+
+      </div>
+
+      <div class="card">
+
+        <h3>STATUS</h3>
+
+        <p id="message">
+          Clique em START
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>RECORD</h3>
+
+        <span id="record">
+          0
+        </span>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="gameOver hidden" id="gameOver">
+
+    <div class="box">
+
+      <h2>GAME OVER</h2>
+
+      <p id="finalText"></p>
+
+      <button id="restartBtn">
+        PLAY AGAIN
+      </button>
+
+    </div>
+
+  </div>
+
+  <audio id="greenSound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+
+  <audio id="redSound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+
+  <audio id="yellowSound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+
+  <audio id="blueSound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
